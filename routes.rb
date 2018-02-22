@@ -3,5 +3,12 @@ class Menu_Items < Sinatra::Base
     erb :home
   end
 
+  get "/menu/new" do
+    erb :new
+  end
+
+  post "/menu" do
+
+  end
   #
 end
