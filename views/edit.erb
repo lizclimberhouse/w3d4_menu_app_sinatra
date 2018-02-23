@@ -1,0 +1,15 @@
+<h1 class="center">Edit <%= @menu_edit.name %></h1>
+<form method="POST" action="/menu/<%= @menu_edit.id %>">
+  <input type="hidden" name="_method" value="PUT">
+  <div class="input-field">
+    <input id="name" required name="name" value="<%= @menu_edit.name %>" />
+    <label class="active" for="name">Name</label>
+  </div>
+  <div class="input-field">
+    <textarea class="materialize-textarea" id="desc" required name="description">
+      <%= @menu_edit.description %>
+    </textarea>
+    <label for="desc" class="active">Description</label>
+  </div>
+ <button class="btn right" type="submit">Save</button>
+</form>

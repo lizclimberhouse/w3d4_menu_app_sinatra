@@ -8,13 +8,14 @@ require 'rubygems'
 require 'sinatra'
 require 'sinatra/activerecord'
 require_relative 'environments'
-require './models/app'
+require './models/item'
 
 class Menu_Items < Sinatra::Base
   set :root, File.dirname(__FILE__)
   enable :sessions
   set :views, Proc.new { File.join(root, "views") }
   register Sinatra::ActiveRecordExtension
+  use Rack::MethodOverride
 end
 
 

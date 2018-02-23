@@ -1,6 +1,6 @@
 class CreateMenuApp < ActiveRecord::Migration[5.1]
   def self.up
-    create_table :apps do |t|
+    create_table :items do |t|
       t.string :name
       t.text :description
       t.timestamps
