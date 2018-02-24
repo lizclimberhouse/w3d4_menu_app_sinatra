@@ -1,0 +1,82 @@
+.middle_road {
+  text-align: center;
+}
+
+h1 {
+  /* background-color: rgb(#546e7a); */
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+.column_box {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu_box {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.menu_item_each {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black;
+}
+
+.events_list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  border-left: 2px solid black;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+.event1,
+.event2,
+.event3 {
+  border-bottom: 2px solid black;
+}
+.date_time {
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+.prices {
+  text-transform: uppercase;
+}
+
+.sign_up {
+  padding-bottom: 12px;
+}
+
+.menu_box,
+.events_list {
+  width: 500px;
+}
+
+.date_time {
+
+}
+
+.prices {
+
+}
+
+
+
+/* teal lighten-1
+#26a69a
+
+blue-grey darken-1
+546e7a
+
+pink lighten-3
+#f48fb1 */

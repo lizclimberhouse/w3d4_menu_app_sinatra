@@ -1,5 +1,5 @@
 class Menu_Items < Sinatra::Base
-  get "/" do
+  get "/main" do
     erb :home
   end
 
@@ -31,6 +31,12 @@ class Menu_Items < Sinatra::Base
   delete "/menu/:id" do
     Item.find(params[:id]).destroy
     redirect "/menu"
+  end
+
+  # gotta find a way to do this without the erb
+  get "/" do
+    @menu_add = Item.all
+    erb :main
   end
   #
 end

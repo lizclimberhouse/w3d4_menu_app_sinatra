@@ -1,0 +1,36 @@
+<h1 class="middle_road blue-grey darken-1">Welcome to the Resturant</h1>
+<div class="column_box">
+  <div class="menu_box">
+  <h3>Current Menu</h3>
+  <% @menu_add.each do |menu_add| %>
+    <div class="menu_item_each">
+      <h5 class=""><%= menu_add.name %></h5>
+      <p><%= menu_add.description %></p>
+    </div>
+  <% end %>
+  </div>
+  <div class="events_list">
+    <h3>Upcoming Events</h3>
+    <div class="event1">
+      <h5>Wine Tasting</h5>
+      <h6 class="date_time">March 24th 6pm-8pm</h6>
+      <p>A night of wine pairing and tasting. Come try our reds, whites, along with other spirts and mixed drinks from accross the globe</p>
+      <h6 class="prices">Price: $50 per person</h6>
+      <div class="sign_up"><a href="#" class="btn pink lighten-3">Sign Up</a></div>
+    </div>
+    <div class="event2">
+      <h5>Dessert Sampling</h5>
+      <h6 class="date_time">April 10th 8pm-9pm</h6>
+      <p>Chocolate, fruits, and all kinds of goodness</p>
+      <h6 class="prices">Price: $30 per person</h6>
+      <div class="sign_up"><a href="#" class="btn pink lighten-3">Sign Up</a></div>
+    </div>
+    <div class="event3">
+      <h5>Couples Brunch</h5>
+      <h6 class="date_time">May 5th 10am-1pm</h6>
+      <p>There's nothing better than brunch. Except brunch with your sweetheart</p>
+      <h6 class="prices">Price: $60 per couple</h6>
+      <div class="sign_up"><a href="#" class="btn pink lighten-3">Sign Up</a></div>
+    </div>
+  </div>
+</div>
